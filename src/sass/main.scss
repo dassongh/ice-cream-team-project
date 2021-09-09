@@ -1,7 +1,32 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// general
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./components/general-styles";
+@import "./components/buttons";
+// main
+// header
+// @import "./components/hero-header";
+// // hero
+// @import "./components/hero-page";
+// // section
+// @import "./components/features";
+// // section
+// @import "./components/work";
+// // section
+// @import "./components/team";
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// section
+// @import "./components/companies";
+// footer
+// @import "./components/page-footer";
+
+// modal
+// @import "./components/modal";
+// @import "./components/form";
+// portfolio
+// @import "./components/filter";
+// @import "./components/portfolio";
+// @import "./components/product";
