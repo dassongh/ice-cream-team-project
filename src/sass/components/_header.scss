@@ -1,0 +1,76 @@
+.header {
+  background-color: $accent-Bg-color;
+
+  @include centerFlex($content: space-between);
+
+  position: fixed;
+  z-index: 99;
+
+  width: 100%;
+  padding: 6px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 37px 34px 5px 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 37px 115px 5px 115px;
+  }
+}
+.logo {
+  fill: $accent-text-color;
+}
+.nav {
+  @media screen and(max-width: 1199px) {
+    background-color: $mobile-menu-bg-color;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 255px;
+    height: 100vh;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    transition: right 250ms $primary-animation;
+  }
+  &.is-open {
+    @media screen and (max-width: 1199px) {
+      right: 0;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+  &__link {
+    color: $white-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+      border-top: 1px solid $mob-menu-border-color;
+      padding: 11px 0 11px 20px;
+      &:last-child {
+        border-bottom: 1px solid $mob-menu-border-color;
+      }
+    }
+
+    transition: color 250ms $primary-animation;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
+
+    @media screen and(min-width: 900px) {
+      padding-left: 35px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
