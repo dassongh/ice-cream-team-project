@@ -34,11 +34,11 @@ body {
 // main container stiles
 .container {
   margin: 0 auto;
-  padding: 0 0 0 5px;
+  padding: 0 5px 0 5px;
 
   @media (min-width: 320px) {
     width: 100%;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
   }
 
   @media (min-width: 480px) {
