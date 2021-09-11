@@ -1,5 +1,6 @@
 .footer-page {
   position: relative;
+  padding-bottom: 25px;
   background-color: $secondary-Bg-color;
 }
 
@@ -29,12 +30,44 @@
   color: $lite-acent-text-color;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-page--location {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer-page__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 153px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.footer-page__link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fea5bb;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-page__link:hover,
+.footer-page__link:focus {
+  background-color: $accent-text-color;
+}
+
 .contact-list {
   display: block;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.83;
-  margin-bottom: 132px;
+  margin-bottom: 65px;
+  text-align: right;
 }
 
 .contact-list a {
@@ -46,6 +79,7 @@
   width: 150px;
   margin-left: auto;
   margin-right: auto;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
