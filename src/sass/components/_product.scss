@@ -1,0 +1,272 @@
+.products {
+  padding: 135px 0 98px 0;
+}
+
+.products__label {
+  display: block;
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $lite-acent-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products__title {
+  margin-bottom: 130px;
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 259px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: flex;
+  }
+}
+.products__item {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.products__item:not(:last-child) {
+  margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.products__box {
+  border-radius: 24px;
+  padding: 161px 39px 41px 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 485px;
+  @media screen and (min-width: 768px) {
+    min-height: 485px;
+    padding: 161px 11px 40px 11px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 525px;
+  }
+}
+.cream {
+  background-color: $accent-Bg-color;
+}
+.coffee {
+  background-color: #f0d1a5;
+}
+.milkshakes {
+  background-color: #c2e297;
+}
+
+.cream::before {
+  content: '';
+  background-image: url('../images/home-pic1mob-min.png');
+  width: 249px;
+  height: 252px;
+  background-size: contain;
+  z-index: 3;
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/home-pic1tab-min.png');
+    width: 220px;
+    height: 226px;
+    background-size: contain;
+    transform: translateY(60%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/home-pic1desc-min.png');
+    width: 335px;
+    height: 335px;
+    transform: translateY(15%);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .cream:before {
+    background-image: url('../images/home-pic1@2x-mob-min.png');
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/home-pic1@2xtab-min.png');
+      background-size: contain;
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/home-pic1@2xdesc-min.png');
+      background-size: contain;
+    }
+  }
+}
+.coffee:before {
+  content: '';
+  background-image: url('../images/home-pic2-mob-min.png');
+  width: 249px;
+  height: 252px;
+  background-size: cover;
+  z-index: 3;
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/home-pic2tab-min.png');
+    width: 220px;
+    height: 226px;
+    background-size: contain;
+    transform: translateY(60%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/home-pic2desc-min.png');
+    width: 335px;
+    height: 335px;
+    transform: translateY(15%);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .coffee:before {
+    background-image: url('../images/home-pic2-mob@2x-min.png');
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/home-pic2@2xtab-min.png');
+      background-size: contain;
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/home-pic2@2xdesc-min.png');
+      background-size: contain;
+    }
+  }
+}
+.milkshakes:before {
+  content: '';
+  background-image: url('../images/home-pic3-mob-min.png');
+  width: 249px;
+  height: 252px;
+  background-size: cover;
+  z-index: 3;
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/home-pic3tab-min.png');
+    width: 220px;
+    height: 226px;
+    background-size: contain;
+    transform: translateY(60%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/home-pic3desc-min.png');
+    width: 335px;
+    height: 335px;
+    transform: translateY(15%);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .milkshakes:before {
+    background-image: url('../images/home-pic3-mob@2x-min.png');
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/home-pic3@2xtab-min.png');
+      background-size: contain;
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/home-pic3@2xdesc-min.png');
+      background-size: contain;
+    }
+  }
+}
+
+.products-item__title {
+  margin-bottom: 30px;
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $white-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products__icon {
+  display: block;
+}
+
+.products__text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white-text-color;
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 62px;
+  }
+}
+
+.products__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: $white-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background: url(arrow-right.png);*/
+}
