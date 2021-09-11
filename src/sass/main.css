@@ -19,7 +19,10 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
+
+
   box-sizing: border-box;
+
 }
 
 /**
@@ -28,7 +31,10 @@ Use a more readable tab size (opinionated).
 :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
+
+
   tab-size: 4;
+
 }
 
 /**
@@ -57,8 +63,9 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji';
+
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  
 }
 
 /*
@@ -81,7 +88,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
+
 }
 
 /**
@@ -100,7 +108,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -169,9 +180,10 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
+
   -webkit-appearance: button;
 }
 
@@ -179,9 +191,12 @@ button,
 Remove the inner border and padding in Firefox.
 */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+
+
   border-style: none;
   padding: 0;
 }
@@ -190,9 +205,11 @@ button::-moz-focus-inner,
 Restore the focus styles unset by the previous rule.
 */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+
   outline: 1px dotted ButtonText;
 }
 
@@ -220,8 +237,10 @@ progress {
 /**
 Correct the cursor style of increment and decrement buttons in Safari.
 */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+
   height: auto;
 }
 
@@ -229,7 +248,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+
+[type="search"] {
+
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -239,7 +260,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
+
+
 [type='search']::-webkit-search-decoration {
+
   -webkit-appearance: none;
 }
 
@@ -266,16 +290,19 @@ summary {
 }
 
 @font-face {
+
   font-family: 'DMSans';
   src: url('../fonts/DMSans-Regular.eot');
   src: local('☺'), url('../fonts/DMSans-Regular.woff') format('woff'),
     url('../fonts/DMSans-Regular.ttf') format('truetype'),
     url('../fonts/DMSans-Regular.svg') format('svg');
+
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+
   font-family: 'DMSans';
   src: url('../fonts/DMSans-Medium.eot');
   src: local('☺'), url('../fonts/DMSans-Medium.woff') format('woff'),
@@ -286,6 +313,7 @@ summary {
 }
 
 @font-face {
+
   font-family: 'DMSans';
   src: url('../fonts/DMSans-Bold.eot');
   src: local('☺'), url('../fonts/DMSans-Bold.woff') format('woff'),
@@ -296,6 +324,7 @@ summary {
 }
 
 @font-face {
+
   font-family: 'TitanOne';
   src: url('../fonts/TitanOne-Regular.eot');
   src: local('☺'), url('../fonts/TitanOne-Regular.woff') format('woff'),
@@ -325,6 +354,7 @@ img {
 }
 
 body {
+
   font-family: 'DMSans', arial, sans-serif;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -376,7 +406,6 @@ body {
     padding: 10px 12px;
   }
 }
-
 .primary__btn:hover,
 .primary__btn:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -396,6 +425,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
   max-width: 209px;
   padding: 10px 63px;
   margin: 0 20px 19px 20px;
@@ -462,6 +492,7 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 @media (min-width: 768px) {
@@ -470,6 +501,7 @@ body {
     padding: 10px 17px;
   }
 }
+
 
 .secondary__btn:hover,
 .secondary__btn:focus {
@@ -540,96 +572,226 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inform__btn:hover,
-.inform__btn:focus {
+.inform__btn:hover, .inform__btn:focus {
   background-color: #ecebeb;
 }
 
-.about {
-  padding-top: 125px;
-  padding-bottom: 39px;
-  background-color: secondary-Bg-color;
+.footer-page {
+  position: relative;
+  padding-bottom: 25px;
+  background-color: #fff5f6;
 }
 
-.about__label {
-  font-family: 'TitanOne';
-  font-size: 18px;
-  color: #ffa5ba;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 15px;
+@media screen and (min-width: 768px) {
+  .footer-page {
+    padding-bottom: 18px;
+  }
 }
 
-.about__title {
-  font-family: 'TitanOne';
+@media screen and (min-width: 1199px) {
+  .footer-page {
+    padding-bottom: 10px;
+  }
+}
+
+.footer-page__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-page__header {
+    margin-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page--location {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-page--location {
+    margin-bottom: 106px;
+  }
+}
+
+.footer-page__header--main {
+  font-family: TitanOne;
   font-size: 34px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  text-align: center;
-  margin-bottom: 26px;
 }
 
-.about__image-container {
+@media screen and (min-width: 768px) {
+  .footer-page__header--main {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-page__header--main {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-page__header--main {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.footer-page__header--secondary {
+  font-family: TitanOne;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page__header--secondary {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1.15;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-page__header--secondary {
+    width: 232px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-page__header--secondary {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page--location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-page__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 153px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.footer-page__link {
+  width: 32px;
+  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 46px;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fea5bb;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__content {
-  padding-left: 35px;
-  padding-right: 35px;
+.footer-page__link:hover,
+.footer-page__link:focus {
+  background-color: #d41443;
 }
 
-.about__text {
-  font-family: 'DMSans';
-  font-weight: 500;
+.contact-list {
+  display: block;
+  font-weight: bold;
   font-size: 12px;
-  line-height: 1.62;
-  margin-bottom: 33px;
+  line-height: 1.83;
+  margin-bottom: 65px;
+  text-align: right;
 }
 
-.about__description {
-  font-family: 'DMSans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.62;
-  color: #907e82;
-  margin-bottom: 19px;
+@media screen and (min-width: 768px) {
+  .contact-list {
+    font-size: 14px;
+  }
 }
 
-.about-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: 'DMSans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-  background-color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    font-size: 16px;
+  }
+}
+
+.contact-list a {
+  text-decoration: none;
   color: #d41443;
-  min-width: 176px;
-  height: 44px;
-  border: none;
-  border-radius: 22px;
 }
 
-.about-button__icon {
-  margin-left: 17px;
+.footer-page__copyright {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #907e82;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page__copyright {
+    width: 100%;
+  }
+}
+
+.footer-page__copyright::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: 89px;
+  left: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-page__copyright::before {
+    bottom: 73px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .footer-page__copyright::before {
+    bottom: 45px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
