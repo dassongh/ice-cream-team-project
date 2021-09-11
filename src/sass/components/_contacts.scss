@@ -1,0 +1,13 @@
+.contacts {
+    background-color: $secondary-Bg-color;
+}
+.contacts__title {
+    display: none;
+}
+.contacts__company-element-list {
+    width: 220px;
+    height: 427px;
+    background-color: $primary-Bg-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
