@@ -1,0 +1,105 @@
+.advantages{
+    background-color: #FFF5F6;
+    
+    &__container{
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-bottom: 145px;
+
+    @media screen and (min-width: 768px){
+        padding-left: 36px;
+        padding-right: 76px;
+        padding-bottom: 242px;
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 115px; 
+        padding-right: 115px; 
+        padding-bottom: 310px;
+    }
+}
+
+&__title--visually-hidden{
+    @extend %invisible;
+}
+
+&__list{
+    @media screen and (min-width: 768px){
+        display: flex;
+        margin:-30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin:-15px;
+}
+}
+
+&__content{
+    width:230px;
+    &:not(:last-child){
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: 768px){
+   /* width: 180px;*/
+    width: calc((100% - 6 * 30px) / 3);
+    margin:30px;
+    /*margin-bottom: 136px;
+    &:not(:last-child){
+        margin-right: 60px;
+      }*/
+  }
+
+  @media screen and (min-width: 1200px){
+    width: calc((100% - 6 * 15px) / 3);
+    margin:15px;
+  }
+}
+
+&__number{
+font-family: $secondary-font-family;
+font-weight: normal;
+font-size: 36px;
+line-height: 1.139;
+letter-spacing:$primary-letter-spacing;
+text-transform: uppercase;
+color:$accent-text-color;
+
+margin-bottom: 16px;
+
+@media screen and (min-width: 768px){
+    
+    font-size: 48px;
+    line-height: 1.146;
+ 
+}
+
+@media screen and (min-width: 1200px){
+
+font-size: 58px;
+line-height: 1.138;
+}
+
+}
+
+&__text{
+font-family:$primary-font-family;
+font-weight: bold;
+font-size: 12px;
+line-height: 1.7;
+color: $primary-text-color;
+
+@media screen and (min-width: 768px){
+
+font-size: $secondary-font-size;
+line-height: 1.74;
+}
+
+@media screen and (min-width: 1200px){
+
+    font-size: $primary-font-size;
+    line-height: 1.76;
+    letter-spacing:$secondary-letter-spacing;
+    }
+    
+}
+}
