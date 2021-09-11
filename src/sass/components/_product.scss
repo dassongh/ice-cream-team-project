@@ -90,7 +90,7 @@
 
 .cream::before {
   content: '';
-  background: no-repeat url('../../../../../ice-cream-team-project/src/images/home-pic1mob-min.png');
+  background-image: url('../images/home-pic1mob-min.png');
   width: 249px;
   height: 252px;
   background-size: contain;
@@ -99,8 +99,7 @@
   top: -50%;
   transform: translateY(50%);
   @media screen and (min-width: 768px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic1tab-min.png');
+    background-image: url('../images/home-pic1tab-min.png');
     width: 220px;
     height: 226px;
     background-size: contain;
@@ -108,8 +107,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic1desc-min.png');
+    background-image: url('../images/home-pic1desc-min.png');
     width: 335px;
     height: 335px;
     transform: translateY(15%);
@@ -119,26 +117,22 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .cream:before {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic1@2x-mob-min.png');
+    background-image: url('../images/home-pic1@2x-mob-min.png');
     background-size: cover;
     @media screen and (min-width: 768px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic1@2xtab-min.png');
+      background-image: url('../images/home-pic1@2xtab-min.png');
       background-size: contain;
     }
 
     @media screen and (min-width: 1200px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic1@2xdesc-min.png');
+      background-image: url('../images/home-pic1@2xdesc-min.png');
       background-size: contain;
     }
   }
 }
 .coffee:before {
   content: '';
-  background: no-repeat
-    url('../../../../../ice-cream-team-project/src/images/home-pic2-mob-min.png');
+  background-image: url('../images/home-pic2-mob-min.png');
   width: 249px;
   height: 252px;
   background-size: cover;
@@ -147,8 +141,7 @@
   top: -50%;
   transform: translateY(50%);
   @media screen and (min-width: 768px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic2tab-min.png');
+    background-image: url('../images/home-pic2tab-min.png');
     width: 220px;
     height: 226px;
     background-size: contain;
@@ -156,8 +149,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic2desc-min.png');
+    background-image: url('../images/home-pic2desc-min.png');
     width: 335px;
     height: 335px;
     transform: translateY(15%);
@@ -167,26 +159,22 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .coffee:before {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic2-mob@2x-min.png');
+    background-image: url('../images/home-pic2-mob@2x-min.png');
     background-size: cover;
     @media screen and (min-width: 768px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic2@2xtab-min.png');
+      background-image: url('../images/home-pic2@2xtab-min.png');
       background-size: contain;
     }
 
     @media screen and (min-width: 1200px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic2@2xdesc-min.png');
+      background-image: url('../images/home-pic2@2xdesc-min.png');
       background-size: contain;
     }
   }
 }
 .milkshakes:before {
   content: '';
-  background: no-repeat
-    url('../../../../../ice-cream-team-project/src/images//home-pic3-mob-min.png');
+  background-image: url('../images/home-pic3-mob-min.png');
   width: 249px;
   height: 252px;
   background-size: cover;
@@ -195,8 +183,7 @@
   top: -50%;
   transform: translateY(50%);
   @media screen and (min-width: 768px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic3tab-min.png');
+    background-image: url('../images/home-pic3tab-min.png');
     width: 220px;
     height: 226px;
     background-size: contain;
@@ -204,8 +191,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic3desc-min.png');
+    background-image: url('../images/home-pic3desc-min.png');
     width: 335px;
     height: 335px;
     transform: translateY(15%);
@@ -215,18 +201,15 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .milkshakes:before {
-    background: no-repeat
-      url('../../../../../ice-cream-team-project/src/images/home-pic3-mob@2x-min.png');
+    background-image: url('../images/home-pic3-mob@2x-min.png');
     background-size: cover;
     @media screen and (min-width: 768px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic3@2xtab-min.png');
+      background-image: url('../images/home-pic3@2xtab-min.png');
       background-size: contain;
     }
 
     @media screen and (min-width: 1200px) {
-      background: no-repeat
-        url('../../../../../ice-cream-team-project/src/images/home-pic3@2xdesc-min.png');
+      background-image: url('../images/home-pic3@2xdesc-min.png');
       background-size: contain;
     }
   }
