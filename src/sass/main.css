@@ -1010,6 +1010,10 @@ body {
   display: none;
 }
 
+.contacts__company {
+  padding-left: a;
+}
+
 .contacts__company-element-list {
   width: 220px;
   height: 427px;
@@ -1017,5 +1021,111 @@ body {
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  padding: 43px 20px;
+}
+
+.contacts__company-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 16px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: #F0D1A5;
+  color: #ffffff;
+}
+
+#food-truck {
+  width: 130px;
+  background-color: #C2E297;
+}
+
+.contacts__company-roster {
+  margin-top: 25px;
+}
+
+.contacts__company-roster-element {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__company-roster-element:first-child {
+  padding-top: 0;
+}
+
+.contacts__company-roster-element:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.contacts__company-roster-town {
+  width: 57px;
+  height: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.contacts__company-roster-town-description {
+  width: 179px;
+  height: 36px;
+  left: 70px;
+  top: 5236px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907E82;
+}
+
+.contacts__company-roster-days {
+  width: 107px;
+  height: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000000;
+}
+
+.contacts__company-roster-time {
+  width: 161.9px;
+  height: 23px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ffa5ba;
+}
+
+.contacts__company-roster-element a {
+  width: 179px;
+  height: 37px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
 }
 /*# sourceMappingURL=main.css.map */
