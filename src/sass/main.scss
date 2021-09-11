@@ -1,11 +1,11 @@
 // general
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-@import "./base/normalize";
-@import "./base/fonts";
-@import "./components/general-styles";
-@import "./components/buttons";
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/normalize';
+@import './base/fonts';
+@import './components/general-styles';
+@import './components/buttons';
 // main
 // header
 // @import "./components/hero-header";
@@ -29,4 +29,4 @@
 // portfolio
 // @import "./components/filter";
 // @import "./components/portfolio";
-// @import "./components/product";
+@import './components/product';
