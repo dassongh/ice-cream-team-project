@@ -19,7 +19,10 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+
+
+  box-sizing: border-box;
+
 }
 
 /**
@@ -28,7 +31,10 @@ Use a more readable tab size (opinionated).
 :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+
+
+  tab-size: 4;
+
 }
 
 /**
@@ -57,7 +63,9 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
+
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  
 }
 
 /*
@@ -81,6 +89,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
+
 }
 
 /**
@@ -99,7 +108,10 @@ code,
 kbd,
 samp,
 pre {
+
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -171,6 +183,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+
   -webkit-appearance: button;
 }
 
@@ -178,9 +191,12 @@ button,
 Remove the inner border and padding in Firefox.
 */
 button::-moz-focus-inner,
+
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
+
+
   border-style: none;
   padding: 0;
 }
@@ -189,9 +205,11 @@ button::-moz-focus-inner,
 Restore the focus styles unset by the previous rule.
 */
 button:-moz-focusring,
+
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
+
   outline: 1px dotted ButtonText;
 }
 
@@ -219,8 +237,10 @@ progress {
 /**
 Correct the cursor style of increment and decrement buttons in Safari.
 */
+
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
+
   height: auto;
 }
 
@@ -228,7 +248,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
 [type="search"] {
+
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -238,7 +260,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
-[type="search"]::-webkit-search-decoration {
+
+
+[type='search']::-webkit-search-decoration {
+
   -webkit-appearance: none;
 }
 
@@ -265,33 +290,46 @@ summary {
 }
 
 @font-face {
-  font-family: "DMSans";
-  src: url("../fonts/DMSans-Regular.eot");
-  src: local("☺"), url("../fonts/DMSans-Regular.woff") format("woff"), url("../fonts/DMSans-Regular.ttf") format("truetype"), url("../fonts/DMSans-Regular.svg") format("svg");
+
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans-Regular.eot');
+  src: local('☺'), url('../fonts/DMSans-Regular.woff') format('woff'),
+    url('../fonts/DMSans-Regular.ttf') format('truetype'),
+    url('../fonts/DMSans-Regular.svg') format('svg');
+
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "DMSans";
-  src: url("../fonts/DMSans-Medium.eot");
-  src: local("☺"), url("../fonts/DMSans-Medium.woff") format("woff"), url("../fonts/DMSans-Medium.ttf") format("truetype"), url("../fonts/DMSans-Medium.svg") format("svg");
+
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans-Medium.eot');
+  src: local('☺'), url('../fonts/DMSans-Medium.woff') format('woff'),
+    url('../fonts/DMSans-Medium.ttf') format('truetype'),
+    url('../fonts/DMSans-Medium.svg') format('svg');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "DMSans";
-  src: url("../fonts/DMSans-Bold.eot");
-  src: local("☺"), url("../fonts/DMSans-Bold.woff") format("woff"), url("../fonts/DMSans-Bold.ttf") format("truetype"), url("../fonts/DMSans-Bold.svg") format("svg");
+
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans-Bold.eot');
+  src: local('☺'), url('../fonts/DMSans-Bold.woff') format('woff'),
+    url('../fonts/DMSans-Bold.ttf') format('truetype'),
+    url('../fonts/DMSans-Bold.svg') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TitanOne";
-  src: url("../fonts/TitanOne-Regular.eot");
-  src: local("☺"), url("../fonts/TitanOne-Regular.woff") format("woff"), url("../fonts/TitanOne-Regular.ttf") format("truetype"), url("../fonts/TitanOne-Regular.svg") format("svg");
+
+  font-family: 'TitanOne';
+  src: url('../fonts/TitanOne-Regular.eot');
+  src: local('☺'), url('../fonts/TitanOne-Regular.woff') format('woff'),
+    url('../fonts/TitanOne-Regular.ttf') format('truetype'),
+    url('../fonts/TitanOne-Regular.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -316,7 +354,8 @@ img {
 }
 
 body {
-  font-family: "DMSans", arial, sans-serif;
+
+  font-family: 'DMSans', arial, sans-serif;
   letter-spacing: 0.02em;
   font-size: 16px;
 }
@@ -367,10 +406,12 @@ body {
     padding: 10px 12px;
   }
 }
-
-.primary__btn:hover, .primary__btn:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.primary__btn:hover,
+.primary__btn:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #ecebeb;
 }
 
@@ -382,8 +423,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
   max-width: 209px;
   padding: 10px 63px;
   margin: 0 20px 19px 20px;
@@ -400,11 +442,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   margin-left: 9px;
 }
@@ -414,11 +456,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -446,8 +488,11 @@ body {
   border-radius: 20px;
   padding: 7px 13px;
   border: 1px #d41443;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 @media (min-width: 768px) {
@@ -457,9 +502,13 @@ body {
   }
 }
 
-.secondary__btn:hover, .secondary__btn:focus {
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+.secondary__btn:hover,
+.secondary__btn:focus {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #d41443;
   background-color: #ffffff;
   border: 1px #d41443;
@@ -664,6 +713,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;

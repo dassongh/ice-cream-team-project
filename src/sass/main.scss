@@ -6,20 +6,12 @@
 @import './base/fonts';
 @import './components/general-styles';
 @import './components/buttons';
-@import './components/page-footer'; // main
-// header
-// @import "./components/hero-header";
-// // hero
-// @import "./components/hero-page";
-// // section
-// @import "./components/features";
-// // section
-// @import "./components/work";
-// // section
-// @import "./components/team";
 
-// section
-// @import "./components/companies";
+// header
+@import './components/header';
+// main
+@import './components/hero';
+@import './components/about';
 // footer
 // @import "./components/page-footer";
 
@@ -29,4 +21,5 @@
 // portfolio
 // @import "./components/filter";
 // @import "./components/portfolio";
-// @import "./components/product";
+@import './components/product';
+@import './components/page-footer';
