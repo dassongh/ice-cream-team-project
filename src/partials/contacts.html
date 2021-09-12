@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
     <div class="container">
       <!-- Title  -->
       <h2 class="contacts__title">Contacts</h2>
@@ -29,19 +29,19 @@
           </li>
           <!-- Contacts food truck in Los Angeles -->
           <li class="contacts__company-element-list">
-            <span class="contacts__company-title">FOOD TRUCK</span>
+            <span class="contacts__company-title" id="food-truck">FOOD TRUCK</span>
             <ul class="contacts__company-roster">
               <li class="contacts__company-roster-element">
                 <span class="contacts__company-roster-town">Los Angeles</span>
                 <p class="contacts__company-roster-town-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
               </li>
               <li class="contacts__company-roster-element">
-                <dl>
-                  <dt class="contacts__company-roster-days">Monday - Friday</dt>
-                  <dd class="contacts__company-roster-time">06:00 AM - 10:00 PM</dd>
-                  <dt class="contacts__company-roster-days">Saturday - Sunday</dt>
-                  <dd class="contacts__company-roster-time">08:00 AM - 16:00 PM</dd>
-                </dl>
+                <ul>
+                  <li class="contacts__company-roster-days">Monday - Friday</li>
+                  <li class="contacts__company-roster-time">06:00 AM - 10:00 PM</li>
+                  <li class="contacts__company-roster-days">Saturday - Sunday</li>
+                  <li class="contacts__company-roster-time">08:00 AM - 16:00 PM</li>
+                </ul>
               </li>
               <li class="contacts__company-roster-element">
                 <a href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -58,12 +58,12 @@
                 <p class="contacts__company-roster-town-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
               </li>
               <li class="contacts__company-roster-element">
-                <dl>
-                  <dt class="contacts__company-roster-days">Monday - Friday</dt>
-                  <dd class="contacts__company-roster-time">06:00 AM - 10:00 PM</dd>
-                  <dt class="contacts__company-roster-days">Saturday - Sunday</dt>
-                  <dd class="contacts__company-roster-time">08:00 AM - 16:00 PM</dd>
-                </dl>
+                <ul>
+                  <li class="contacts__company-roster-days">Monday - Friday</li>
+                  <li class="contacts__company-roster-time">06:00 AM - 10:00 PM</li>
+                  <li class="contacts__company-roster-days">Saturday - Sunday</li>
+                  <li class="contacts__company-roster-time">08:00 AM - 16:00 PM</li>
+                </ul>
               </li>
               <li class="contacts__company-roster-element">
                 <a href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -75,8 +75,14 @@
       </div>
       <!-- Кнопки -->
       <div class="contacts__button">
-        <button class="contacts__button-locations">Our Locations</button>
-        <button class="contacts__button-franchise">Franchise</button>
+        <button class="contacts__button-locations">
+          Our Locations
+          <span class="contacts__button-pointer-locations">></span>
+        </button>
+        <button class="contacts__button-franchise">
+          Franchise
+          <span class="contacts__button-pointer-franchise">></span>
+        </button>
       </div>
     </div>  
   </section>
