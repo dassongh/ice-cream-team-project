@@ -234,7 +234,12 @@
 }
 
 .products__icon {
-  display: block;
+  display: flex;
+  width: 26px;
+  height: 6px;
+}
+.products-btn__icon {
+  fill: #d41443;
 }
 
 .products__text {
