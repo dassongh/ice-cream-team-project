@@ -1,11 +1,14 @@
 .contacts {
     background-color: $secondary-Bg-color;
+    padding: 50px 0;
 }
 .contacts__title {
     display: none;
 }
-.contacts__company {
-    padding-left: a;
+.contacts__company-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contacts__company-element-list {
     width: 220px;
@@ -14,6 +17,10 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 43px 20px;
+    margin-bottom: 20px;
+}
+.contacts__company-element-list:last-child {
+    margin-bottom: 0;
 }
 .contacts__company-title {
     display: flex;
@@ -102,4 +109,35 @@
     font-size: 12px;
     line-height: 18px;
     color: $secondary-text-color;
+}
+.contacts__button {
+    display: flex;
+    margin-top: 54px;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__button-locations {
+    width: 161px;
+    height: 44px;
+    color: $white-text-color;
+    background: #D41342;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+.contacts__button-franchise {
+    width: 161px;
+    height: 44px;
+    color: $accent-text-color;
+    background: $primary-Bg-color;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+}
+.contacts__button-pointer-locations {
+    margin-left: 8px;
+}
+.contacts__button-pointer-franchise {
+    margin-left: 13px;
 }
