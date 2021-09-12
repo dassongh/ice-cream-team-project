@@ -1,22 +1,47 @@
 .header {
   background-color: rgba(255, 184, 202, 0.4);
-
-  @include centerFlex($content: space-between);
-
   position: fixed;
   z-index: 99;
-
   width: 100%;
-  padding: 6px 20px;
+}
+
+.container-header {
+  position: relative;
+  @include centerFlex($content: space-between);
+  padding-top: 6px;
+  padding-bottom: 6px;
   @media screen and (min-width: 768px) {
-    padding: 10px 34px 5px 34px;
+    padding-top: 10px;
+    padding-bottom: 6px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 37px 115px 5px 115px;
+    padding-top: 37px;
+    padding-bottom: 6px;
   }
 }
 .logo {
-  fill: $accent-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__thumb {
+    background-color: $accent-text-color;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__image {
+    fill: $white-text-color;
+  }
+  &__text {
+    color: $accent-text-color;
+    font-family: $secondary-font-family;
+    font-size: 25px;
+    line-height: 0.9;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+  }
 }
 .nav {
   @media screen and(max-width: 1279px) {
@@ -31,6 +56,10 @@
     flex-direction: column;
     z-index: 99;
     transition: right 250ms $primary-animation;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 300px;
+    }
   }
   &.is-open {
     @media screen and (max-width: 1279px) {
