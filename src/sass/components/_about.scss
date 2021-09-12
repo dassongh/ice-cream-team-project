@@ -3,6 +3,28 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: $secondary-Bg-color;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/milk-bg1200.png');
+    background-repeat: no-repeat;
+    background-position: 0% 87%;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk-bg1200@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/milk-bg1200.png');
+    background-repeat: no-repeat;
+    background-position: 0% 87%;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk-bg1200@2x.png');
+    }
+  }
 }
 
 .about__label {
@@ -50,8 +72,8 @@
 }
 
 .about__content {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 768px) {
     padding-top: 40px;
     padding-left: 0px;
@@ -105,4 +127,16 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn-bg-color;
+  }
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  margin-left: 20px;
 }
