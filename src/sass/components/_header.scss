@@ -24,12 +24,10 @@
   align-items: center;
   justify-content: center;
   &__thumb {
-    background-color: $accent-text-color;
-    border-radius: 50%;
     margin-right: 10px;
   }
   &__image {
-    fill: $white-text-color;
+    fill: $accent-text-color;
   }
   &__text {
     color: $accent-text-color;
