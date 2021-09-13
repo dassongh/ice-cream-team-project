@@ -1,33 +1,22 @@
 // general
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-@import "./base/normalize";
-@import "./base/fonts";
-@import "./components/general-styles";
-@import "./components/buttons";
-@import "./components/gallery";
-// main
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/normalize';
+@import './base/fonts';
+@import './components/general-styles';
+@import './components/buttons';
+@import './components/advantages';
 // header
-// @import "./components/hero-header";
-// // hero
-// @import "./components/hero-page";
-// // section
-// @import "./components/features";
-// // section
-// @import "./components/work";
-// // section
-// @import "./components/team";
-
-// section
-// @import "./components/companies";
+@import './components/header';
+// main
+@import './components/hero';
+@import './components/about';
+@import './components/contacts';
+@import './components/product';
+@import "./components/gallery";
+@import './components/reviews';
 // footer
-// @import "./components/page-footer";
-
+@import './components/page-footer';
 // modal
-// @import "./components/modal";
-// @import "./components/form";
-// portfolio
-// @import "./components/filter";
-// @import "./components/portfolio";
-// @import "./components/product";
+@import './components/modal';
