@@ -9,13 +9,13 @@
     <!-- styles -->
     <!-- local font -->
     <!-- local modern normalise -->
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    
-    
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
     <!-- header -->
@@ -33,9 +33,18 @@
     </main>
     <!-- footer -->
     <!-- base JS -->
-<include src="./partials/page-footer.html"></include>
+    <include src="./partials/page-footer.html"></include>
+    <!-- modal vindow -->
+    <include src="./partials/modal-header.html"></include>
     <script src="./index.js"></script>
     <!-- mobile menu Js -->
     <script src="./menu.js"></script>
+    <!-- modal -->
+    <script src="./modal.js"></script>
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

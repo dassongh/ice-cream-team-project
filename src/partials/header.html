@@ -1,34 +1,41 @@
 <header class="header">
-  <!-- logo -->
-  <svg width="200px" height="50px">
-    <use class="logo" href="./images/symbol-defs.svg#logo"></use>
-  </svg>
-  <!-- nav -->
-  <nav class="nav" id="nav" data-menu>
-    <button class="primary__btn primary__btn-mobile">
-      Buy now <span class="primary__btn-arrow"> &gt;</span>
-    </button>
-    <a class="nav__link" href="#">Home</a>
-    <a class="nav__link" href="#">About us</a>
-    <a class="nav__link" href="#">How it’s made?</a>
-    <a class="nav__link" href="#">Our products</a>
-    <a class="nav__link" href="#">Contact</a>
-  </nav>
-  <!-- site btns -->
-  <div class="button__thumb">
-    <!-- button -->
-    <button class="primary__btn primary__btn-header">
-      Buy now <span class="primary__btn-arrow"> &gt;</span>
-    </button>
-    <!-- mobile btn -->
-    <button type="button" class="button__mobile" data-menu-button aria-expanded="false">
-      <svg width="40px" height="40px" aria-label="переключательмобильного меню">
-        <use
-          class="button__mobile-menu"
-          xlink:href="./images/symbol-defs.svg#icon-mobile-menu"
-        ></use>
-        <use class="button__mobile-cross" xlink:href="./images/symbol-defs.svg#icon-close"></use>
-      </svg>
-    </button>
+  <div class="container container-header">
+    <!-- logo -->
+    <div data-aos="fade-right" class="logo">
+      <div class="logo__thumb">
+        <svg width="40px" height="40px">
+          <use class="logo__image" href="./images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <span class="logo__text">icecream</span>
+    </div>
+    <!-- nav -->
+    <nav data-aos="zoom-in" class="nav" id="nav" data-menu>
+      <button class="primary__btn primary__btn-mobile" data-modal-open>
+        Buy now <span class="primary__btn-arrow"> &gt;</span>
+      </button>
+      <a class="nav__link" href="#home">Home</a>
+      <a class="nav__link" href="#about-us">About us</a>
+      <a class="nav__link" href="#made">How it’s made?</a>
+      <a class="nav__link" href="#products">Our products</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+    <!-- site btns -->
+    <div data-aos="fade-left" class="button__thumb">
+      <!-- button -->
+      <button class="primary__btn primary__btn-header">
+        Buy now <span class="primary__btn-arrow"> &gt;</span>
+      </button>
+      <!-- mobile btn -->
+      <button type="button" class="button__mobile" data-menu-button aria-expanded="false">
+        <svg width="40px" height="40px" aria-label="переключательмобильного меню">
+          <use class="button__mobile-menu" xlink:href="./images/sprite.svg#icon-menu-burger"></use>
+          <use
+            class="button__mobile-cross"
+            xlink:href="./images/sprite.svg#icon-close-button-modal"
+          ></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
