@@ -39,7 +39,7 @@
     }
 }
 
-.slid{
+.slide{
     text-align: center;
 
     &__foto{
@@ -50,7 +50,7 @@
     }  
 }
 
-.slid__comment{
+.slide__comment{
      position: relative;
     padding: 40px 50px 30px 50px;
     margin-bottom: 40px;
@@ -103,7 +103,7 @@
     }
 }
 
- .slid__comment--gradient{
+ .slide__comment--gradient{
     position: relative;
 
     background-size: 100% 30px;
@@ -124,7 +124,7 @@
     }
 }
 
-.slid__comment--style{
+.slide__comment--style{
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -141,7 +141,7 @@
 
 }
 
-.slid__subtitle{
+.slide__subtitle{
     font-size: 14px;
     line-height: 1.86;
 
