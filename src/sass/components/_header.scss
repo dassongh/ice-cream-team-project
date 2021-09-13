@@ -6,7 +6,6 @@
 }
 
 .container-header {
-  position: relative;
   @include centerFlex($content: space-between);
   padding-top: 6px;
   padding-bottom: 6px;
@@ -57,7 +56,7 @@
     transition: right 250ms $primary-animation;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-      width: 300px;
+      width: 500px;
     }
   }
   &.is-open {
