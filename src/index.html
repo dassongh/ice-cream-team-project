@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-
     <!-- header -->
     <include src="./partials/header.html"></include>
     <!-- maim -->
@@ -28,6 +24,7 @@
       <!-- section about -->
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
       <include src="./partials/reviews.html"></include>
       <include src="./partials/contacts.html"></include>
     </main>
@@ -42,6 +39,7 @@
     <!-- modal -->
     <script src="./modal.js"></script>
     <!-- animation on scroll -->
+    <script src="./gallery.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
