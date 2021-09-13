@@ -224,25 +224,31 @@ dd {
   } 
 }
 .contacts__button-locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 161px;
   height: 44px;
   color: $white-text-color;
-  background: #D41342;
+  background: #d41342;
   border-radius: 22px;
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
   &:hover,
   &:focus {
-      background: #D41342;
+    background-color: $hover-btn-bg-color;
   }
   @media screen and (min-width: 768px) {
-      width: 191px;
-      margin-bottom: 0;
-      margin-right: 15px;
-  } 
+    width: 191px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
 }
 .contacts__button-franchise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 161px;
   height: 44px;
   color: $accent-text-color;
@@ -250,24 +256,25 @@ dd {
   border-radius: 22px;
   border: none;
   cursor: pointer;
-  &:hover 
+  &:hover,
   &:focus {
-      background-color: $hover-btn-bg-color;
+    background-color: $hover-btn-bg-color;
+    color: $accent-text-color;
   }
   @media screen and (min-width: 768px) {
-      width: 191px;
-  } 
+    width: 191px;
+  }
 }
 .contacts__button-pointer-locations {
+  display: block;
+  margin-top: 3px;
   margin-left: 8px;
   @media screen and (min-width: 768px) {
-      margin-left: 13px;
-  } 
+    margin-left: 13px;
+  }
 }
 .contacts__button-pointer-franchise {
+  display: block;
+  margin-top: 3px;
   margin-left: 13px;
 }
-.contacts__button-franchise:hover 
-.contacts__buttonfranchise:focus {
-  background-color: $hover-btn-bg-color;
-} 
