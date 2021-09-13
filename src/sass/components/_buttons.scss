@@ -122,7 +122,7 @@
 }
 // ==================================================================
 // inform Btn
-.inform__btn {
+.inform__button {
   background-color: $primary-Bg-color;
   cursor: pointer;
   @include centerFlex();
@@ -130,13 +130,7 @@
   height: 26px;
   border-radius: 50px;
   border: 1px transparent;
-  transition: background-color 250ms $primary-animation, color 250ms $primary-animation;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-text-color;
-    color: $white-text-color;
-  }
+  transition: background-color 250ms $primary-animation;
 }
 .inform__arrow {
   fill: $accent-text-color;
