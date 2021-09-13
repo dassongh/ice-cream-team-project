@@ -1,14 +1,25 @@
 .gallery {
-  padding-top: 120px;
+  padding-top: 95px;
   background-image: linear-gradient(to bottom, #FFF5F6 55%, $primary-Bg-color 55%);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+  }
+}
+
+.container__gallery {
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
 }
 
 .gallery__item {
-  width: 140px;
-  height: 140px;
   display: inline-block;
   overflow: hidden;
-  border-radius: 20px;
+  
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
 
   img {
     width: 100%;
@@ -20,34 +31,92 @@
     }
   }
 
+  &--3 {
+    height: 72px;
+    width: 72px;
+  }
+
   &--1,
   &--6 {
-    margin-top: 144px;
-    margin-bottom: 144px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   &--2 {
-    margin-top: 90px;
+    margin-top: 24px;
   }
 
-  &--3 {
-    height: 288px;
-    width: 288px;
-  }
-  
   &--4 {
-    margin-top: 100px;
+    margin-top: 28px;
   }
 
   &--5 {
-    margin-top: 53px;
+    margin-top: 15px;
   }
 
   &--7,
   &--8,
   &--9,
   &--10 {
-    margin-top: 10px;
+    margin-top: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 95px;
+    height: 95px;
+    border-radius: 13px;
+
+    &--3 {
+      height: 185px;
+      width: 185px;
+    }
+
+    &--1,
+    &--6 {
+      margin-top: 88px;
+      margin-bottom: 88px;
+    }
+
+    &--2 {
+      margin-top: 54px;
+    }
+
+    &--4 {
+      margin-top: 62px;
+    }
+
+    &--5 {
+      margin-top: 33px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    
+    &--1,
+    &--6 {
+      margin-top: 144px;
+      margin-bottom: 144px;
+    }
+
+    &--2 {
+      margin-top: 90px;
+    }
+
+    &--3 {
+      height: 288px;
+      width: 288px;
+    }
+    
+    &--4 {
+      margin-top: 100px;
+    }
+
+    &--5 {
+      margin-top: 53px;
+    }
   }
 }
 

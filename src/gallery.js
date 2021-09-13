@@ -5,6 +5,6 @@ window.onload = () => {
 
   const masonry = new Masonry(galleryRef, {
     itemSelector: '.gallery__item',
-    gutter: 10,
+    gutter: 4,
   });
 };
