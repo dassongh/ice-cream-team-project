@@ -1,0 +1,135 @@
+.backdrop-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+
+.backdrop-about__is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop-about__is-hidden .modal-about {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: $mobile-menu-bg-color;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 750px;
+    // background-image: url('../images/milk-bg450.png');
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: right bottom;
+  }
+  // @media screen and (min-width: 768px) {
+
+  //   // background-image: url('../images/milk-bg700.png');
+  // }
+}
+
+.icon-close__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-about__close {
+  background-color: $primary-Bg-color;
+  padding: 8px 8px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn-bg-color;
+  }
+}
+
+.icon-close-modal {
+  fill: $accent-text-color;
+}
+
+.about-modal-text {
+  font-family: DMSans;
+  color: $white-text-color;
+  text-indent: 25px;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 19px;
+  }
+}
+
+.about-modal-text:last-child {
+  margin-bottom: 0px;
+}
+
+// .trembling:hover {
+//   animation: shake 0.5s;
+//   animation-iteration-count: infinite;
+// }
+
+// @keyframes shake {
+//   0% {
+//     transform: translate(1px, 1px) rotate(0deg);
+//   }
+//   10% {
+//     transform: translate(-1px, -2px) rotate(-1deg);
+//   }
+//   20% {
+//     transform: translate(-3px, 0px) rotate(1deg);
+//   }
+//   30% {
+//     transform: translate(3px, 2px) rotate(0deg);
+//   }
+//   40% {
+//     transform: translate(1px, -1px) rotate(1deg);
+//   }
+//   50% {
+//     transform: translate(-1px, 2px) rotate(-1deg);
+//   }
+//   60% {
+//     transform: translate(-3px, 1px) rotate(0deg);
+//   }
+//   70% {
+//     transform: translate(3px, 1px) rotate(-1deg);
+//   }
+//   80% {
+//     transform: translate(-1px, -1px) rotate(1deg);
+//   }
+//   90% {
+//     transform: translate(1px, 2px) rotate(0deg);
+//   }
+//   100% {
+//     transform: translate(1px, -2px) rotate(-1deg);
+//   }
+// }
