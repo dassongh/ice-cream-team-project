@@ -29,6 +29,10 @@
     min-width: 280px;
     padding: 0 20px;
 
+    @media screen and (max-width:767px){
+        max-width: 480px;   
+    }
+
     @media screen and (min-width:768px){
         padding: 0;
         max-width: 620px;
