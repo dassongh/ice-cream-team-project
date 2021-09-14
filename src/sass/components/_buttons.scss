@@ -48,6 +48,7 @@
 }
 .primary__btn-header {
   @include centerFlex();
+  font-weight: 700;
   @media (max-width: 767px) {
     display: none;
   }
