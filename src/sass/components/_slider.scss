@@ -9,10 +9,25 @@
 
     & .slick-slide{
         display: none;
+        animation-name: changeBgColor;
+        animation-duration: 250ms;
+        animation-timing-function: $primary-animation;
+        animation-iteration-count: 1;
         }
 
     & .slick-slide.slick-active{
         display: block;
+            @keyframes changeBgColor {
+                0%{
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+
+                100%{
+                    transform: translateX(0%);
+                    opacity: 1;
+                }
+            }
         }
 
     & .slick-slide.slick-cloned{
@@ -52,6 +67,7 @@
         background-image: 
         url(../images/ellipse1.svg);
         background-repeat: no-repeat;
+        
     }
 
     & .slick-dots li.slick-active button{
