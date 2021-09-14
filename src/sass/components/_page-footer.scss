@@ -21,14 +21,9 @@ footer {
 .footer-page__header {
   display: flex;
   flex-direction: column;
-  transition: 500ms;
 
   @media screen and(max-width: 767px) {
     margin-bottom: 43px;
-  }
-
-  &:hover {
-    transform: scale(1.2);
   }
 }
 
