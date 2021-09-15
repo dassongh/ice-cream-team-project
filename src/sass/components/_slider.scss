@@ -9,10 +9,25 @@
 
     & .slick-slide{
         display: none;
+        animation-name: changeBgColor;
+        animation-duration: 250ms;
+        animation-timing-function: $primary-animation;
+        animation-iteration-count: 1;
         }
 
     & .slick-slide.slick-active{
         display: block;
+            @keyframes changeBgColor {
+                0%{
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+
+                100%{
+                    transform: translateX(0%);
+                    opacity: 1;
+                }
+            }
         }
 
     & .slick-slide.slick-cloned{
@@ -21,17 +36,19 @@
 
     & .slick-dots{
         position: absolute;
+        bottom: -30px;
         left: 50%;
-        transform: translateX(-67%);
+        transform: translateX(-50%);
         z-index: 11;
         display: flex;
 
-       
+       @media screen and (min-width:768px) {
+        bottom: -35px;
+       }
     }
 
     & .slick-dots li {
-        list-style: none;
-        margin: 0px 18px;
+        margin: 0 9px;
 
         &:nth-child(n + 4){
             display: none;
@@ -39,9 +56,6 @@
     }
 
     & .slick-dots button {
-        position: absolute;
-        top:100%;
-        padding: 0;
         background-color: inherit;
         border: none;
 
@@ -53,8 +67,9 @@
         background-image: 
         url(../images/ellipse1.svg);
         background-repeat: no-repeat;
-    
+        
     }
+
     & .slick-dots li.slick-active button{
         background-color: inherit; top:100%;
         border: none;
