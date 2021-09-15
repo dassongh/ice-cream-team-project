@@ -14,32 +14,35 @@
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
-      flex-direction: row;
+    flex-direction: row;
   }
 }
 .contacts__company-element-list {
-  width: 220px;
+  width: 100%;
   height: 100%;
   background-color: $primary-Bg-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-      margin-right: 20px;
-      padding: 50px 32px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding: 50px 32px;
   }
   @media screen and (min-width: 1280px) {
-      width: 330px;
-      margin-right: 30px;
-      padding: 57px 43px;
+    width: 330px;
+    margin-right: 30px;
+    padding: 57px 43px;
   }
 }
 .contacts__company-element-list:last-child {
   margin-bottom: 0;
   @media screen and (min-width: 768px) {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 .contacts__company-title {
@@ -48,51 +51,50 @@
   justify-content: center;
   width: 80px;
   height: 16px;
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   text-align: center;
   letter-spacing: 0.04em;
-  background-color: #F0D1A5;
+  background-color: #f0d1a5;
   border-radius: 4px;
   color: $white-text-color;
   margin-bottom: 0;
   @media screen and (min-width: 768px) {
-      width: 73px;
-      height: 28px;
-      font-size: 16px;
-      border-radius: 6px;
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 6px;
   }
 }
 #food-truck {
   width: 130px;
-  background-color: #C2E297;
+  background-color: #c2e297;
   @media screen and (min-width: 768px) {
-      width: 138px;
+    width: 138px;
   }
 }
 .contacts__company-roster {
   margin-top: 25px;
   @media screen and (min-width: 768px) {
-      margin-top: 30px;
+    margin-top: 30px;
   }
   @media screen and (min-width: 1280px) {
-      margin-top: 32px;
+    margin-top: 32px;
   }
 }
 .contacts__company-roster-element {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
-      padding-top: 30px;
-      padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 1280px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts__company-roster-element:first-child {
@@ -105,42 +107,40 @@
 .contacts__company-roster-town {
   width: 57px;
   height: 22px;
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
   color: $primary-text-color;
   @media screen and (min-width: 768px) {
-      width: 58px;
-      height: 26px;
-      font-size: 14px;
+    width: 58px;
+    height: 26px;
+    font-size: 14px;
   }
   @media screen and (min-width: 1280px) {
-      width: 66px;
-      height: 30px;
-      font-size: 16px;
+    width: 66px;
+    height: 30px;
+    font-size: 16px;
   }
 }
 .contacts__company-roster-town-description {
-  width: 179px;
-  height: 36px;
-  font-family: DM Sans;
-  font-style: normal;
+  width: 100%;
+  height: 100%;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 183%;
-  color: #907E82;
+  color: #907e82;
   @media screen and (min-width: 768px) {
-      width: 145px;
-      height: 65px;
-      font-size: 14px;
+    width: 145px;
+    height: 65px;
+    font-size: 14px;
   }
   @media screen and (min-width: 1280px) {
-      width: 243px;
-      height: 50px;
-      font-size: 16px;
+    width: 243px;
+    height: 50px;
+    font-size: 16px;
   }
 }
 dl,
@@ -149,69 +149,67 @@ dd {
   margin: 0;
 }
 .contacts__company-roster-days {
-  width: 107px;
-  height: 22px;    
-  font-family: DM Sans;
-  font-style: normal;
+  width: 100%;
+  height: 22px;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: $primary-text-color;
   @media screen and (min-width: 768px) {
-      width: 109px;
-      height: 26px;
-      font-size: 14px;
-  } 
+    height: 26px;
+    font-size: 14px;
+  }
   @media screen and (min-width: 1280px) {
-      width: 134px;
-      height: 30px;
-      font-size: 16px;
-  } 
+    height: 30px;
+    font-size: 16px;
+  }
 }
 .contacts__company-roster-time {
-  width: 161px;
+  width: 100%;
   height: 23px;
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: $lite-acent-text-color;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
-      width: 142px;
-      font-size: 14px;
-      margin-bottom: 16px;
-  } 
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
   @media screen and (min-width: 1280px) {
-      width: 163px;
-      height: 30px;
-      font-size: 16px;
-      margin-bottom: 15px;
-  } 
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
 .contacts__company-roster-time:last-child {
   margin-bottom: 0;
 }
 .contacts__company-roster-element a {
+  display: block;
   width: 179px;
-  height: 37px;
-  font-family: DM Sans;
-  font-style: normal;
+  height: 100%;
+  font-family: DMSans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: $secondary-text-color;
+  text-decoration: none;
   @media screen and (min-width: 768px) {
-      width: 157px;
-      height: 48px;
-      font-size: 14px;
-  } 
+    width: 157px;
+    height: 100%;
+    font-size: 14px;
+  }
   @media screen and (min-width: 1280px) {
-      width: 243px;
-      height: 50px;
-      font-size: 16px;
-  } 
+    width: 243px;
+    height: 100%;
+    font-size: 16px;
+  }
+}
+.contacts__company-roster-element a:first-child {
+  margin-bottom: 3px;
 }
 .contacts__button {
   display: flex;
@@ -219,10 +217,10 @@ dd {
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
-      margin-top: 81px;
-      flex-direction: row;
-      justify-content: center;
-  } 
+    margin-top: 81px;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .contacts__button-locations {
   display: flex;
@@ -239,6 +237,7 @@ dd {
   &:hover,
   &:focus {
     background-color: $hover-btn-bg-color;
+    color: $accent-text-color;
   }
   @media screen and (min-width: 768px) {
     width: 191px;

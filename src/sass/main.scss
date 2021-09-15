@@ -1,4 +1,3 @@
-// general
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
@@ -7,20 +6,17 @@
 @import './components/general-styles';
 @import './components/buttons';
 @import './components/advantages';
-// header
 @import './components/header';
-// main
 @import './components/hero';
 @import './components/about';
 @import './components/contacts';
 @import './components/product';
-@import "./components/gallery";
-
+@import './components/gallery';
 @import './components/reviews';
 @import './components/slider';
-// footer
 @import './components/page-footer';
-// modal
 @import './components/modal';
+@import './components/modal-info';
 @import './components/modal-about';
 @import './components/modal-maps';
+@import './components/modal-contacts';

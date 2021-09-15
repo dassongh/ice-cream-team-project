@@ -7,14 +7,14 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 113px 20px 25px 20px;
+  padding: 115px 0px 25px 0px;
 
   @media screen and(min-width: 768px) {
-    padding: 158px 36px 18px 36px;
+    padding: 158px 0px 18px 0px;
   }
 
   @media screen and(min-width: 1280px) {
-    padding: 165px 115px 10px 115px;
+    padding: 115px 0px 10px 0px;
   }
 }
 
@@ -26,6 +26,7 @@ footer {
     margin-bottom: 43px;
   }
 }
+
 .footer-page--location {
   @media screen and (min-width: 768px) {
     margin-bottom: 120px;
