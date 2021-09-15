@@ -36,7 +36,7 @@
 
 .hero-container-first {
   display: flex;
-  align-items: center;
+  // align-items: center;
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
@@ -95,6 +95,11 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: row;
+      padding-bottom: 28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 45px;
     }
   }
   &__thumb {
@@ -171,8 +176,8 @@
   z-index: 2;
 
   @media screen and (min-width: 768px) {
-    top: 64px;
-    left: 400px;
+    top: 107px;
+    left: 380px;
   }
   @media screen and (min-width: 1280px) {
     top: 107px;
