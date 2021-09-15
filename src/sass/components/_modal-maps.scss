@@ -1,0 +1,76 @@
+.backdrop-maps {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+  }
+  
+  .backdrop-maps__is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .backdrop-maps__is-hidden .modal-maps {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  
+  .modal-maps {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 15px 25px;
+    /*background-color: $mobile-menu-bg-color;*/
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 479px) {
+        width: 400px;
+        height: 300px;
+    }
+    @media screen and (min-width: 480px) {
+        width: 500px;
+        height: 375px;
+    }
+  
+    @media screen and (min-width: 769px) {
+      width: 600px;
+      height: 450px;
+      
+    }
+    
+  }
+  
+  
+  
+ /* .modal-maps__close {
+    background-color: $primary-Bg-color;
+    padding: 8px 8px;
+    border-radius: 50%;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      background-color: $hover-btn-bg-color;
+    }
+  }
+  
+  .icon-close-modal {
+    fill: $accent-text-color;
+  }*/
+  
+  
+  
+  
+  
+  
+  
