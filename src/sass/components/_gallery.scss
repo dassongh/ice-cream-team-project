@@ -1,9 +1,10 @@
 .gallery {
   padding-top: 95px;
-  background-image: linear-gradient(to bottom, #FFF5F6 55%, $primary-Bg-color 55%);
+  background-image: linear-gradient(to bottom, #FFF5F6 70%, $primary-Bg-color 70%);
 
   @media screen and (min-width: 768px) {
     padding-top: 120px;
+    background-image: linear-gradient(to bottom, #FFF5F6 55%, $primary-Bg-color 55%);
   }
 }
 
