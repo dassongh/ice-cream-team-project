@@ -138,6 +138,7 @@
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     height: 665px;
+    pointer-events: none;
   }
 
   &::before {
