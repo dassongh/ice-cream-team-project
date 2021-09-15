@@ -44,33 +44,16 @@
       height: 450px;
       
     }
-    
+    @media screen and (min-width: 1280px) {
+        width: 720px;
+        height: 540px;
+        
+      }
   }
   
   
   
- /* .modal-maps__close {
-    background-color: $primary-Bg-color;
-    padding: 8px 8px;
-    border-radius: 50%;
-    border: none;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
-      background-color: $hover-btn-bg-color;
-    }
-  }
-  
-  .icon-close-modal {
-    fill: $accent-text-color;
-  }*/
-  
-  
-  
-  
+ 
   
   
   
