@@ -1,7 +1,3 @@
-const headerRef = document.querySelector('.header');
-
-window.addEventListener('scroll', () => {
-  console.log('scroll');
-  headerRef.style.backgroundColor = '#FFA5BA';
+$(window).on("scroll", function() {
+  $('.header').toggleClass("active", $(this).scrollTop() > $('.hero').height());
 });
-
